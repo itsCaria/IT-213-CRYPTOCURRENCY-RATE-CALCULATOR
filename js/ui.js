@@ -72,25 +72,25 @@ class UI {
  
          // Print the spinner
          this.showSpinner();
- 
-         // After 3 seconds print the result and remove the spinner
-         setTimeout(() => {
-             // Print the result
-             const divResult = document.querySelector('#result');
-             divResult.innerHTML = HTMLTemplate;
- 
-             // Hide spinner
-             document.querySelector('.spinner img').remove();
-         }, 3000);
- 
-         
-     }
- 
-     // Prints the spinner
-     showSpinner() {
-         const spinnerGIF = document.createElement('img');
-         spinnerGIF.src = 'img/spinner.gif';
-         document.querySelector('.spinner').appendChild(spinnerGIF);
-     }
- }
+
+
+                  // After 3 seconds print the result and remove the spinner
+                  setTimeout(() => {
+                    // Print the result
+                    const divResult = document.querySelector('#result');
+                    divResult.innerHTML = HTMLTemplate;
         
+                    // Hide spinner
+                    document.querySelector('.spinner img').remove();
+                }, 3000);
+        
+                
+            }
+        
+            // Prints the spinner
+            showSpinner() {
+                const spinnerGIF = document.createElement('img');
+                spinnerGIF.src = 'img/spinner.gif';
+                document.querySelector('.spinner').appendChild(spinnerGIF);
+            }
+        }
